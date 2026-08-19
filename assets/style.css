@@ -11,8 +11,7 @@
   --accent:     #7a1f2b;   /* muted maroon — nods to UMD without shouting */
   --accent-soft:#f3ecec;
   --bg:         #ffffff;
-  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --serif: Georgia, "Times New Roman", Times, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -69,9 +68,9 @@ a:hover {
 /* ---------- Sidebar ---------- */
 
 .portrait {
-  width: 190px;
-  height: 190px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 2px;
   object-fit: cover;
   display: block;
   margin-bottom: 22px;
@@ -79,12 +78,11 @@ a:hover {
 }
 
 .sidebar h1 {
-  font-family: var(--serif);
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 6px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.018em;
 }
 
 .sidebar .affil {
@@ -173,11 +171,10 @@ nav a.here::before {
 /* ---------- Content typography ---------- */
 
 .content h2 {
-  font-family: var(--serif);
-  font-size: 1.32rem;
-  font-weight: 600;
+  font-size: 1.16rem;
+  font-weight: 700;
   margin: 0 0 18px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.012em;
 }
 
 .content h2 + p { margin-top: 0; }
@@ -238,11 +235,11 @@ nav a.here::before {
 }
 
 .paper .title {
-  font-family: var(--serif);
-  font-size: 1.06rem;
+  font-size: 1.02rem;
   font-weight: 600;
   line-height: 1.4;
   margin: 0 0 5px;
+  letter-spacing: -0.008em;
 }
 
 .paper .byline {
@@ -364,8 +361,7 @@ footer a { color: var(--ink-faint); border-bottom-color: var(--rule); }
 
   .portrait {
     margin: 0 auto 20px;
-    width: 158px;
-    height: 158px;
+    width: 210px;
   }
 
   .meta {
