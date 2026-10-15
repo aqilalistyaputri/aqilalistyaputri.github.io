@@ -6,6 +6,9 @@
 <title>Research &middot; Aqila Putri</title>
 <meta name="description" content="Publications, working papers, and works in progress by Aqila Putri.">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+  .abstract { margin-top: 12px; }
+</style>
 
 </head>
 <body>
@@ -70,8 +73,7 @@
       <div class="paper">
         <p class="title">Local Queens and Princesses: The Impact of Female Dynasts on Provision of Public Goods</p>
         <p class="byline"><a href="assets/putri_jmp.pdf">PDF</a></p>
-        <button class="toggle" type="button" aria-expanded="false" aria-controls="abs1">Abstract</button>
-        <p class="abstract" id="abs1" hidden>
+        <p class="abstract" id="abs1">
           Female representation in politics remains limited, and the women who do reach
           office frequently come from political dynasties, in part because of the entry
           barriers they face. The effects of female and dynastic politicians on their
@@ -90,8 +92,7 @@
 
       <div class="paper">
         <p class="title">Does Rent Beget Rent? Natural Resource Boom and Political Selection</p>
-        <button class="toggle" type="button" aria-expanded="false" aria-controls="abs2">Abstract</button>
-        <p class="abstract" id="abs2" hidden>
+        <p class="abstract" id="abs2">
           How do economic shocks shape the entrenchment of political dynasties? I study
           Indonesia&rsquo;s nickel boom&mdash;a large, location-specific rent shock driven by
           electric-vehicle battery demand and Chinese downstream investment&mdash;and its
@@ -130,19 +131,6 @@
   </main>
 </div>
 
-<script>
-// Expand/collapse abstracts. Progressive enhancement: with JS off the
-// abstracts stay hidden but nothing breaks.
-document.querySelectorAll('.toggle').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var target = document.getElementById(btn.getAttribute('aria-controls'));
-    var open = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!open));
-    target.hidden = open;
-    btn.textContent = open ? 'Abstract' : 'Hide abstract';
-  });
-});
-</script>
 
 </body>
 </html>
